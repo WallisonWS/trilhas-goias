@@ -1,0 +1,390 @@
+.premium-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #FAFAFA 0%, #FFFFFF 100%);
+  padding-bottom: 80px;
+}
+
+.premium-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.premium-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.premium-icon {
+  font-size: 48px;
+  color: #FF9800;
+  margin-bottom: 16px;
+}
+
+.premium-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #212121;
+  line-height: 1.3;
+}
+
+/* Illustration */
+.premium-illustration {
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.navigation-illustration {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Main Feature */
+.main-feature {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.main-feature h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.main-feature p {
+  font-size: 16px;
+  color: #757575;
+  line-height: 1.5;
+}
+
+/* Progress Dots */
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 30px 0;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #E0E0E0;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #2E7D32;
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Plans Section */
+.plans-section {
+  margin: 30px 0;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.plan-card {
+  position: relative;
+  background: white;
+  border: 2px solid #E0E0E0;
+  border-radius: 16px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  border-color: #2E7D32;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.15);
+}
+
+.plan-card.selected {
+  border-color: #2E7D32;
+  background: linear-gradient(to bottom, #E8F5E9 0%, #FFFFFF 100%);
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.2);
+}
+
+.plan-card.popular {
+  border-color: #2E7D32;
+}
+
+.savings-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2E7D32;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.popular-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #FF9800;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.plan-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 16px;
+}
+
+.plan-pricing {
+  margin-bottom: 16px;
+}
+
+.price-main {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.currency {
+  font-size: 18px;
+  font-weight: 600;
+  color: #212121;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.billing {
+  font-size: 14px;
+  color: #757575;
+}
+
+.price-total {
+  font-size: 13px;
+  color: #757575;
+}
+
+.plan-select {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.radio {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #E0E0E0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.radio.checked {
+  border-color: #2E7D32;
+}
+
+.radio-dot {
+  width: 12px;
+  height: 12px;
+  background: #2E7D32;
+  border-radius: 50%;
+}
+
+/* Features List */
+.features-list {
+  margin: 40px 0;
+}
+
+.features-list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+  font-size: 24px;
+  color: #2E7D32;
+  flex-shrink: 0;
+}
+
+.feature-content {
+  flex: 1;
+}
+
+.feature-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.feature-content p {
+  font-size: 14px;
+  color: #757575;
+  line-height: 1.5;
+}
+
+.check-icon {
+  font-size: 20px;
+  color: #4CAF50;
+  flex-shrink: 0;
+}
+
+/* Subscribe Section */
+.subscribe-section {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.subscribe-btn {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.3);
+  transition: all 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+}
+
+.subscribe-btn:active {
+  transform: translateY(0);
+}
+
+.terms {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #757575;
+}
+
+.terms a {
+  color: #2E7D32;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Bottom Navigation */
+.bottom-nav-premium {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: white;
+  border-top: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1001;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #757575;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-item svg {
+  font-size: 24px;
+}
+
+.nav-item.active {
+  color: #2E7D32;
+}
+
+.nav-item:hover {
+  color: #2E7D32;
+}
+
+.record-btn-nav {
+  width: 56px;
+  height: 56px;
+  background: #2E7D32;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+  margin-bottom: 8px;
+}
+
+.record-dot {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .premium-title {
+    font-size: 24px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-card {
+    padding: 16px;
+  }
+}
