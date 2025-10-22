@@ -21,7 +21,8 @@ const Chat = ({ roomId, roomType = 'geral', roomName = 'Chat' }) => {
     loadMessages();
 
     // Connect to Socket.io
-    const newSocket = io(import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000');
+    const backendUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'https://trilhas-goias.onrender.com';
+    const newSocket = io(backendUrl);
     setSocket(newSocket);
 
     // Join chat room

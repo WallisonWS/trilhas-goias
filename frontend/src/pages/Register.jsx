@@ -161,25 +161,6 @@ const Register = () => {
               </select>
             </div>
 
-            <div className="form-group">
-              <label className="form-label">
-                Preferências de Trilha (opcional)
-              </label>
-              <select
-                name="tipos"
-                multiple
-                value={formData.preferencias.tipos}
-                onChange={handleChange}
-                className="form-select"
-                size="3"
-              >
-                <option value="caminhada">Caminhada</option>
-                <option value="bike">Bike/Ciclismo</option>
-                <option value="long-course">Long Course</option>
-              </select>
-              <small className="form-hint">Segure Ctrl/Cmd para selecionar múltiplas opções</small>
-            </div>
-
             <button 
               type="submit" 
               className="btn btn-primary btn-block"
